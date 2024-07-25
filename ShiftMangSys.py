@@ -170,7 +170,7 @@ class Schedule:
 
     def display_schedule(self, year, month):
         if (year, month) in self.schedules:
-            print(f"Centre for Railway Information Systems (CRIS)")
+            print(f""add Company Name here"")
             print(f"Duty Roster for {calendar.month_name[month]} {year}")
             print(self.schedules[(year, month)].T.fillna('Off'))
         else:
@@ -391,6 +391,7 @@ if __name__ == "__main__":
     app = ScheduleApp(schedule)
     app.mainloop()
 
+
 ('\n'
  'Check last 2 days of each employee and according to it assign the Shift for next month.\n'
  '\n'
@@ -405,3 +406,5 @@ if __name__ == "__main__":
  'Tr if not training, can also be used as an option for employee to pick from Morning or Evening Shift\n'
  'Evening only when it comes before "E"\n'
  'And can also be used in case of Paid Leaves\n')
+
+ #Made by Ankit Das and Khwiash Mankotia
